@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Heroes | Torneos E-Sports</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold" href="index.html">Digital <span class="text-primary">Heroes</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Torneos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="inicio" class="mt-5 pt-4">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Reemplazar con imagen real en assets -->
+                        <div class="bg-image-hero d-flex align-items-center justify-content-center text-center text-white" style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/hero-bg.jpg') center/cover;">
+                            <div class="container animate-fade-in">
+                                <h1 class="display-3 fw-bold">Domina la Cancha Virtual</h1>
+                                <p class="lead">Las mejores ligas competitivas de E-Sports.</p>
+                                <a href="servicios.html" class="btn btn-primary btn-lg mt-3">Ver Torneos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 border-bottom pb-2">Ligas Activas</h2>
+                <div class="row g-4">
+                    <!-- Card EA FC -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-controller display-4 text-primary mb-3"></i>
+                                <h3 class="card-title h5">Liga Pro EA FC</h3>
+                                <p class="card-text text-muted">Torneo formato liga con ascensos y descensos. Demuestra quién manda en el campo.</p>
+                                <!-- Componente Avanzado: Badge -->
+                                <span class="badge bg-success mb-3">Inscripciones Abiertas</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <button class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicia el 15 de Noviembre">Más info</button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card NBA -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 shadow-sm hover-card">
+                            <div class="card-body text-center">
+                                <i class="bi bi-dribbble display-4 text-danger mb-3"></i>
+                                <h3 class="card-title h5">Draft NBA 2K</h3>
+                                <p class="card-text text-muted">Crea tu quinteto ideal y compite en playoffs por el anillo de campeón.</p>
+                                <span class="badge bg-warning text-dark mb-3">Últimos Cupos</span>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <button class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="Inicia el 20 de Noviembre">Más info</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Digital Heroes. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

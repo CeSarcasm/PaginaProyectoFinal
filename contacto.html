@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Digital Heroes</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold" href="index.html">Digital <span class="text-primary">Heroes</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Torneos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <!-- Active en la página actual -->
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-grow-1 mt-5 pt-5">
+        <section class="container py-4">
+            
+            <div class="text-center mb-5 animate-fade-in">
+                <h1 class="display-5 fw-bold">Contáctanos</h1>
+                <p class="lead text-muted">¿Tienes dudas sobre las inscripciones para la liga de EA FC o el draft de NBA? Escríbenos.</p>
+            </div>
+
+            
+            <div class="row g-5">
+                
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="h4 mb-4">Envíanos un mensaje</h2>
+                            
+                            
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                
+                                <!-- Input: Texto -->
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Ej. Juan Pérez" required minlength="3">
+                                        <div class="invalid-feedback">Por favor ingresa tu nombre (mínimo 3 caracteres).</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <!-- Input: Email -->
+                                    <div class="col-md-6">
+                                        <label for="correo" class="form-label">Correo Electrónico</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                            <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required>
+                                            <div class="invalid-feedback">Ingresa un formato de correo válido.</div>
+                                        </div>
+                                    </div>
+                                    <!-- Input: Teléfono -->
+                                    <div class="col-md-6 mt-3 mt-md-0">
+                                        <label for="telefono" class="form-label">Teléfono</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                            <!-- Validación por patrón (9 dígitos) -->
+                                            <input type="tel" class="form-control" id="telefono" placeholder="Ej. 987654321" pattern="[0-9]{9}" required>
+                                            <div class="invalid-feedback">Ingresa un número de celular de 9 dígitos.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Input: Texto -->
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text"><i class="bi bi-chat-left-text"></i></span>
+                                        <input type="text" class="form-control" id="asunto" placeholder="Ej. Inscripción Torneo" required>
+                                        <div class="invalid-feedback">Por favor indica el asunto de tu mensaje.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Textarea -->
+                                <div class="mb-4">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required minlength="10"></textarea>
+                                    <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+                                </div>
+
+                                <!-- Botón con Ícono -->
+                                <button type="submit" class="btn btn-primary w-100 py-2">
+                                    <i class="bi bi-send me-2"></i> Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-6">
+                    <!-- Tarjetas de Información -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-geo-alt fs-4"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1 fw-bold">Nuestra Sede</h3>
+                                    <p class="text-muted mb-0">San Borja, Lima, Perú</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                    <i class="bi bi-envelope-paper fs-4"></i>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1 fw-bold">Contacto Directo</h3>
+                                    <p class="text-muted mb-0">info@digitalheroes.edu.pe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Iframe -->
+                    <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+                        <!-- Coordenadas centradas en San Borja -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3901.328448834645!2d-77.00445698457002!3d-12.10264024653556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7df76f1c79b%3A0xc682f8d8b1e4c7d0!2sSan%20Borja%2C%20Lima!5e0!3m2!1ses-419!2spe!4v1698765432100!5m2!1ses-419!2spe" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast align-items-center text-bg-success border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-check-circle-fill me-2"></i> ¡Mensaje enviado con éxito! Nos comunicaremos contigo pronto.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SEMÁNTICO -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Digital Heroes. Proyecto académico.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Personalizado: Validación y Toast con jQuery -->
+    <script>
+        $(document).ready(function() {
+            const form = document.getElementById('contactForm');
+            
+            // Lógica de Validación (Req 7 y 12)
+            $(form).on('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault(); // Previene que la página recargue al hacer submit
+                    
+                    // Dispara el Toast de Bootstrap (Req 10)
+                    const toastEl = document.getElementById('successToast');
+                    const toast = new bootstrap.Toast(toastEl);
+                    toast.show();
+                    
+                    // Limpia el formulario simulando el envío
+                    form.reset();
+                    form.classList.remove('was-validated');
+                    return; 
+                }
+                
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+</body>
+</html>
